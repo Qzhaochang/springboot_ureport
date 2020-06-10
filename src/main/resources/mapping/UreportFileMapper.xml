@@ -25,13 +25,13 @@
 		delete from ureport_file where file_name = #{fileName}
 	</delete>
 
-    <insert id="insertReportFile" parameterType="com.yeyoo.emtity.UreportFileEntity">
+    <insert id="insertReportFile" parameterType="com.yunshang.emtity.UreportFileEntity">
 		insert into ureport_file (id,file_name, content, create_time, update_time) values
 		 (#{id},#{fileName}, #{content}, #{createTime}, #{updateTime})
 	</insert>
 
 
-    <update id="updateReportFile" parameterType="com.yeyoo.emtity.UreportFileEntity">
+    <update id="updateReportFile" parameterType="com.yunshang.emtity.UreportFileEntity">
 		update ureport_file set
 			file_name = #{fileName}
 		    where  id = #{id}
