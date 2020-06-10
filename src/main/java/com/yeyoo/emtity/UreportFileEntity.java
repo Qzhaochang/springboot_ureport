@@ -1,4 +1,4 @@
-package com.yeyoo.emtity;
+package com.yunshang.emtity;
 
 import lombok.Data;
 

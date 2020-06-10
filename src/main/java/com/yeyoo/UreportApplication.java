@@ -1,4 +1,4 @@
-package com.yeyoo;
+package com.yunshang;
 
 import com.bstek.ureport.console.UReportServlet;
 import org.mybatis.spring.annotation.MapperScan;

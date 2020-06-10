@@ -1,4 +1,4 @@
-package com.yeyoo.config;
+package com.yunshang.config;
 
 import com.bstek.ureport.definition.datasource.BuildinDatasource;
 import org.slf4j.Logger;

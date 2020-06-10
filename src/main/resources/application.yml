@@ -13,4 +13,4 @@ spring:
 #mybatis
 mybatis:
   mapper-locations: classpath:mapping/*.xml
-  type-aliases-package: com.yeyoo.entity
+  type-aliases-package: com.yunshang.entity

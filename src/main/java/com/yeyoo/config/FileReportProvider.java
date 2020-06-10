@@ -1,9 +1,9 @@
-package com.yeyoo.config;
+package com.yunshang.config;
 
 import com.bstek.ureport.provider.report.ReportFile;
 import com.bstek.ureport.provider.report.ReportProvider;
-import com.yeyoo.emtity.UreportFileEntity;
-import com.yeyoo.mapper.UreportFileMapper;
+import com.yunshang.emtity.UreportFileEntity;
+import com.yunshang.mapper.UreportFileMapper;
 import lombok.Setter;
 import org.springframework.stereotype.Component;
 

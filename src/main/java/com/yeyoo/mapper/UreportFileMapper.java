@@ -1,6 +1,6 @@
-package com.yeyoo.mapper;
+package com.yunshang.mapper;
 
-import com.yeyoo.emtity.UreportFileEntity;
+import com.yunshang.emtity.UreportFileEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
