@@ -1,0 +1,40 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yeyoo.mapper.UreportFileMapper">
+
+    <resultMap type="com.yeyoo.emtity.UreportFileEntity" id="ureportFile">
+        <id column="id" property="id"/>
+        <result column="file_name"  property="fileName"/>
+        <result column="content" property="content"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <select id="checkExistByName" parameterType="java.lang.String" resultType="java.lang.Integer">
+		select count(*) from ureport_file where file_name = #{fileName}
+	</select>
+
+    <select id="queryReportFileList" resultMap="ureportFile">
+		select * from ureport_file
+	</select>
+
+    <select id="queryUreportFileEntityByName" resultType="com.yeyoo.emtity.UreportFileEntity">
+		select * from ureport_file where file_name= #{fileName}
+	</select>
+
+    <delete id="deleteReportFileByName" parameterType="java.lang.String">
+		delete from ureport_file where file_name = #{fileName}
+	</delete>
+
+    <insert id="insertReportFile" parameterType="com.yeyoo.emtity.UreportFileEntity">
+		insert into ureport_file (id,file_name, content, create_time, update_time) values
+		 (#{id},#{fileName}, #{content}, #{createTime}, #{updateTime})
+	</insert>
+
+
+    <update id="updateReportFile" parameterType="com.yeyoo.emtity.UreportFileEntity">
+		update ureport_file set
+			file_name = #{fileName}
+		    where  id = #{id}
+	</update>
+
+</mapper>

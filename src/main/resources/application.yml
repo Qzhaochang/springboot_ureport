@@ -1,0 +1,16 @@
+server:
+  port: 8877
+
+spring:
+  datasource:
+    username: sa
+    password: 123456
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://10.0.0.36:1433;databaseName=project_cg0525
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+#mybatis
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.yeyoo.entity
